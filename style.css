@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+*{
+   padding: 0;
+   margin: 0; 
+   box-sizing: border-box; 
+}
+
+body{
+    margin: 50px 100px 50px 100px;
+    font-family: 'Inter', sans-serif;
+    background-color: #222222;
+}
+
+.logo{
+    width: 120px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 48px;
+    color:#222222;
+    font-weight: 600px;
+    margin-bottom:5px;
+}
+h2{
+    margin: 0px;
+    padding: 0px;
+    color: #FD0C51;
+    font-size: 32px;
+    font-weight: 400px;
+}
+p{
+    padding: 20px 0 20px 0;
+    color: #818181;
+    font-weight: 100px;
+    font-size: 20px;
+}
+.icon{
+    width: 25px;
+    margin:10px 15px 0 15px;
+}
+.middle{
+    display: flex;
+   align-items: center;
+   margin-top: 20px;
+}
+.facephoto{
+    width: 368px;
+    filter: drop-shadow(-30px -30px 0 #FD0C51);
+}
+.detail{
+    background-color: #fbfbfb;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.footer{
+    color: #ffffff;
+    font-size: 16px;
+}
+.socmed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.changecontent::after{
+    content: '';
+    color: #FD0C51;
+    font-size: 32px;
+    font-weight: 400px;
+    animation:changetext 10s infinite linear ;
+    
+}
+@keyframes changetext{
+    0% {content:"Web Designer";}
+    33.33% {content:"Artist";}
+    66.66% {content:"Learner";}
+    100% {content:"Tech Enthusiast";}
+}
+
+@media (max-width: 750px) {
+    body{
+        margin: 20px 40px 20px 40px;
+        height: fit-content;
+        max-width: 100vw;
+       
+    }
+    .middle{
+        display: flex;
+       flex-direction: column-reverse;
+      
+    }
+    .top{
+        margin-bottom: 50px;
+    }
+    h1{
+        font-size: 29px;
+    }
+    h2{
+        font-size: 20px;
+
+    }
+    p{
+        font-size: 16px;
+    }
+    .changecontent::after{
+        font-size: 20px;
+        font-weight: 400px;}
+    .footer{
+            color: #ffffff;
+            font-size: 12px;
+            margin: 0px 0px 10px 0px;
+            padding: 0px;
+            text-align: center;
+        }
+}
